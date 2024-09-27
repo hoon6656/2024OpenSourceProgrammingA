@@ -3,6 +3,5 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Printf("dd")
+	fmt.Printf("hello world")
 }
