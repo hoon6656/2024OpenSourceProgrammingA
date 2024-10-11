@@ -17,7 +17,7 @@ func main() {
 		log.Fatal(err)
 	}
 	i = strings.TrimSpace(i)
-	score, err := strconv.ParseInt(i, 16, 32) //
+	score, err := strconv.ParseInt(i, 16, 32) //문자열 변수 i의 값을 정수형(32비트)로 변환, 입력받은 값은 16비트
 	if score >= 60 {
 		fmt.Println("A")
 		fmt.Printf("%d\n", score)
