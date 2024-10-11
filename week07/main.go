@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 )
 
@@ -16,7 +17,7 @@ func main() {
 		log.Fatal(err)
 	}
 	i = strings.TrimSpace(i)
-	score, err := strconv.parseInt(i, 16, 32)
+	score, err := strconv.ParseInt(i, 16, 32)
 	if score >= 60 {
 		fmt.Println("A")
 		fmt.Printf("%d\n", score)
