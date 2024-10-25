@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Print("숫자 입력 : ")
 	r := bufio.NewReader(os.Stdin)
-	i, err := r, ReadString('\n')
+	i, err := r.ReadString('\n')
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +37,4 @@ func main() {
 	} else {
 		fmt.Println("입력하신 수는 정답보다 큰 수 입니다.high")
 	}
-	rand.Seed(time.Now().Unix())
-	target := rand.Intn(6) + 1
-	fmt.Printf("%d\n", target)
 }
