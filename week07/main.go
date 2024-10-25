@@ -24,5 +24,5 @@ func main() {
 	} else {
 		aOrNot = "BCDEF"
 	}
-	fmt.Printf("%d점은 $s등급입니다.\n", score, aOrNot)
+	fmt.Printf("%d점은 %s등급입니다.\n", score, aOrNot)
 }
