@@ -1,3 +1,4 @@
+// print prime number between two input number
 package main
 
 import (
